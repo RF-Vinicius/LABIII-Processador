@@ -1,4 +1,4 @@
-module PilhaInstrucoes
+module stack
 #(parameter WIDTH_DATA=32, parameter DEPTH=10)
 (
   input clk,       
@@ -37,8 +37,6 @@ always @(posedge clk) begin
         end
     end
 end
-
-
 
 
 endmodule

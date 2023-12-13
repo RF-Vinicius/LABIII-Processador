@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-`include "inst_stack.v"
+
 
 module stack_tb;
 reg clk, reset, push, pop;
@@ -39,19 +39,24 @@ initial begin
     #2;
     data_in <= 4'b1010;
     push = 1'b1;
-    #1;
+    #2;
     push = 1'b0;
 
-    #1;
-
+    #2;
     //PUSH 02
     data_in <= 4'b1111;
     push = 1'b1;
-    #1;
+    #2;
     push = 1'b0;
 
-    #1;
+    #3;
 
+    //POP 01
+    pop = 1;
+    #3;
+    pop = 0;
+
+/*
     //PUSH 03
     data_in <= 4'b0001;
     push = 1'b1;
@@ -86,7 +91,7 @@ initial begin
     #1;
     push = 1'b0;
 
-    #1;
+    #1;*/
 end
 
 
