@@ -11,6 +11,7 @@ module stack
   output  empty   
 );
 
+
 reg [(WIDTH_DATA-1):0] stack[(DEPTH-1):0];
 reg [(DEPTH-1):0] topPositionStack, topPositionStack_next;
 
@@ -44,6 +45,7 @@ always @* begin
         topPositionStack_next = topPositionStack;
     end
 end
+
 
 // Atribuindo novo valor de topPositionStack
 always @(posedge clk) begin
