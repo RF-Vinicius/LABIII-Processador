@@ -19,7 +19,7 @@ module cpu #(
         // ALU
         input wire [WIDTH_DATA-1:0] result_alu,        
         output reg  [WIDTH_DATA-1:0] operand_a,
-        output reg  [WIDTH_DATA-1:0] operand_a,
+        output reg  [WIDTH_DATA-1:0] operand_b,
         output reg  [3:0] op_ALU,
 
         // Stack operations
@@ -108,6 +108,13 @@ module cpu #(
     );
 
     // ALU
+
+    alu alu_cpu (
+        .operand_a(operand_a),
+        .operand_b(operand_b),
+        .op_code(instruction[31:27]),
+        .result(result_alu)
+    );
     // Todo: Instanciar ULA
 
     assign operation = instruction[WIDTH_DATA - 1 +: 5];
@@ -115,14 +122,18 @@ module cpu #(
 
     always @(posedge clk) begin
         if(rst) begin
-            // TODO: reset all
+            state <= LOAD_INST;
+            pcounter <= 0;
+            //Verificar quais outras flags precisam zerar.
         end
         else begin
             state <= next_state;
 
-            case (next_state)   // Todo: Isso não tá no melhor lugar
+            case (next_state)  
                 PCOUNTER_INC:   pcounter <= pcounter + 1;
+
                 default:        pcounter <= pcounter;
+                
             endcase
             
         end
@@ -150,16 +161,18 @@ module cpu #(
             DECODE : begin
                 case (operation)
                     PUSH: begin
-                        next_state = LOAD_DATA;
+                        next_state = GET_DATA;
+                        read_data_enable = 1;
+                        address_memory_data = operand;
                     end
                     PUSH_I: begin
-                        next_state = PCOUNTER_INC;
-                        stack_data_in_operations = operand; // ToDo : o dado só pode ser capturado no próximo clk
-                        stack_push_operations = 1;                    
+                        next_state = PUSH_STACK; 
+                        stack_data_in_operations = operand;
+                        stack_push_operations = 1; //Both data must be stable in the next clock                
                     end
                     PUSH_T: begin
                         next_state = PCOUNTER_INC;
-                        stack_data_in_operations = temp1; // ToDo: verificar se tempo está estável
+                        stack_data_in_operations = temp1;
                         stack_push_operations = 1;     
                     end             
                     POP: begin
@@ -172,7 +185,7 @@ module cpu #(
                     end
                     GOTO: begin
                         next_state = LOAD_INST;
-                        pcounter = operand;         // Todo: Revisar isso: PCounter não é combinacional, precisa mudar com clk
+                        pcounter <= operand; // To do: Verificar depois se não conseguimos tirar o latch
                     end
                     IF_EQ: begin
                         next_state = POP_IF_EQ;
@@ -196,6 +209,7 @@ module cpu #(
                     end 
                     CALL: begin
                         next_state = PUSH_SUBROUTINE;
+                        stack_data_in_subroutines = pcounter;
                         stack_push_subroutines = 1;
                     end
                     RET:
@@ -226,19 +240,16 @@ module cpu #(
             end
             INC_PCOUNTER : begin
                 
-            end
-            LOAD_DATA : begin
-                next_state = GET_DATA;
-                read_data_enable = 1;
             end            
             GET_DATA : begin
                 next_state = PUSH_M;
-                // instruction is updated from the instruction memory
+                stack_push_operations = 1;
+                // memory data in is updated from the instruction memory
             end
             PUSH_M : begin
                 next_state = PCOUNTER_INC;
                 stack_data_in_operations = memory_data_in;
-                stack_push_operations = 1;
+                stack_push_operations = 0;
             end
             ENABLE_WRITE_DATA : begin
                 next_state = PCOUNTER_INC;
@@ -322,12 +333,11 @@ module cpu #(
             end
             PUSH_SUBROUTINE : begin
                 next_state = UPDATE_PCOUNTER;
-                stack_data_in_subroutines = pcounter;
                 stack_push_subroutines = 0;
             end                    
             POP_SUBROUTINE : begin
                 next_state = UPDATE_PCOUNTER;
-                operand = stack_data_out_operations;
+                operand = stack_data_out_subroutines;
                 stack_pop_subroutines = 0;
             end
             UPDATE_PCOUNTER : begin
