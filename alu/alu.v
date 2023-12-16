@@ -1,11 +1,10 @@
 module alu #(
-    parameter integer WIDTH_DATA = 32
+    parameter integer WIDTH_DATA = 16
     )(
-    
-    input wire [WIDTH_DATA - 1:0] operand_a,
-    input wire [WIDTH_DATA - 1:0] operand_b,
-  	input wire [4:0] op_code,
-    output reg [WIDTH_DATA - 1:0] result
+    input wire [WIDTH_DATA-1 : 0] operand_a,
+    input wire [WIDTH_DATA-1 : 0] operand_b,
+  	input wire [4 : 0] op_code,
+    output reg [WIDTH_DATA-1 : 0] result
 
 );
 

@@ -29,7 +29,7 @@ module stack_tb;
     initial begin
         // Initialize signals
         clk = 0;
-        reset = 1;
+        reset = 0;
         push = 0;
         pop = 0;
         data_in = 0;
@@ -41,17 +41,23 @@ module stack_tb;
 
         // Test push operation
         push = 1;
-        for (data_in = 1; data_in <= 10; data_in = data_in + 1) begin
+        for (data_in = 1; data_in <= 5; data_in = data_in + 1) begin
             #10;
-            $display("Push: %d, Full: %d, Empty: %d", data_in, full, empty);
+            //$display("Push: %d", data_in);
+            if(full) begin
+                $display("Stack is full!");
+            end
         end
         push = 0;
-
+        $display("\n");
         // Test pop operation
         pop = 1;
         while (!empty) begin
             #10;
-            $display("Pop: %d, Full: %d, Empty: %d", data_out, full, empty);
+            //$display("Pop: %d", data_out);
+            if(empty) begin
+                $display("Stack is empty!");
+            end
         end
         pop = 0;
 
