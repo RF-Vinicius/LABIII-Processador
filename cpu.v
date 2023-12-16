@@ -1,8 +1,11 @@
+`include "alu/alu.v"
+`include "stack/stack.v"
+
 module cpu #(
     parameter integer WIDTH_DATA = 32, parameter integer AWIDTH = 5
     )(
         input wire clk,
-        input wire rst,
+        input wire reset,
 
         // Instruction memory
         input wire [WIDTH_DATA-1:0] instruction,
@@ -13,7 +16,7 @@ module cpu #(
         output reg [WIDTH_DATA-1:0] memory_data_out,
         input wire [WIDTH_DATA-1:0] memory_data_in,
         output reg read_data_enable,
-        output reg write_data_enable
+        output reg write_data_enable,
         output reg [9:0] address_memory_data,
 
         // ALU
@@ -23,68 +26,84 @@ module cpu #(
         output reg  [3:0] op_ALU,
 
         // Stack operations
-
+        input wire stack_full_operations,
+        input wire [WIDTH_DATA -1 :0] stack_data_out_operations,
+        output reg stack_push_operations, stack_pop_operations, 
+        output reg [WIDTH_DATA -1 :0] stack_data_in_operations,
         // Stack subroutines
+        input wire stack_full_subroutines,
+        input wire [WIDTH_DATA -1 :0] stack_data_out_subroutines,
+        output reg stack_push_subroutines, stack_pop_subroutines, 
+        output reg [WIDTH_DATA -1 :0] stack_data_in_subroutines
+
     );
 
-    localparam PUSH = 0;
-    localparam PUSH_I = 1;
-    localparam PUSH_T = 2;
-    localparam POP = 3;
-    localparam ADD = 4;
-    localparam SUB = 5;
-    localparam MUL = 6;
-    localparam DIV = 7;
-    localparam AND = 8;
-    localparam NAND = 9;
-    localparam OR = 10;
-    localparam XOR = 11;
-    localparam CMP = 12;
-    localparam NOT = 13;
-    localparam GOTO = 14;
-    localparam IF_EQ = 15;
-    localparam IF_GT = 16;
-    localparam IF_LT = 17;
-    localparam IF_GE = 18;
-    localparam IF_LE = 19;
-    localparam CALL = 20;
-    localparam RET = 21;
+    // Instructions
+    localparam PUSH     = 0;
+    localparam PUSH_I   = 1;
+    localparam PUSH_T   = 2;
+    localparam POP      = 3;
+    localparam ADD      = 4;
+    localparam SUB      = 5;
+    localparam MUL      = 6;
+    localparam DIV      = 7;
+    localparam AND      = 8;
+    localparam NAND     = 9;
+    localparam OR       = 10;
+    localparam XOR      = 11;
+    localparam CMP      = 12;
+    localparam NOT      = 13;
+    localparam GOTO     = 14;
+    localparam IF_EQ    = 15;
+    localparam IF_GT    = 16;
+    localparam IF_LT    = 17;
+    localparam IF_GE    = 18;
+    localparam IF_LE    = 19;
+    localparam CALL     = 20;
+    localparam RET      = 21;
 
-// TODO : criar os estados restantes
-    localparam GET_INST = 0;
-    localparam DECODE = 1;
-    localparam POP_TEMP1 = 2;
-    localparam POP_TEMP2 = 3;
-    localparam OP_ALU = 4;
-    localparam PUSH_OP_RESULT = 5;
-    localparam INC_PCOUNTER = 6;
-    localparam READ_MEMO = 7;
-    localparam PUSH_SUBROUTINE = 8;
-    localparam GET_INST = 9;
-    localparam GET_INST = 10;
-    localparam GET_INST = 11;
-    localparam GET_INST = 12;
-    localparam GET_INST = 13;
-
-    // Control signals
-    reg [4:0] operation;
-    reg [BASE_WIDTH -6 :0] operand;
-    reg [5:0] state, next_state;
-
-    // Registers
-    reg [WIDTH_DATA-1:0] temp1, temp2, TOS;
+    // States
+    localparam LOAD_INST            = 0;
+    localparam GET_INST             = 1;
+    localparam PCOUNTER_INC         = 2;
+    localparam DECODE               = 3;
+    localparam POP_TEMP1            = 4;
+    localparam POP_TEMP2            = 5;
+    localparam OP_ALU               = 6;
+    localparam PUSH_OP_RESULT       = 7;
+    localparam GET_DATA             = 8;
+    localparam PUSH_M               = 9;
+    localparam ENABLE_WRITE_DATA    = 11;
+    localparam WRITE_DATA           = 13;
+    localparam POP_IF_EQ            = 14;
+    localparam CMP_IF_EQ            = 15;
+    localparam POP_IF_GT            = 16;
+    localparam CMP_IF_GT            = 17;
+    localparam POP_IF_LT            = 18;
+    localparam CMP_IF_LT            = 19;
+    localparam POP_IF_GE            = 20;
+    localparam CMP_IF_GE            = 21;
+    localparam POP_IF_LE            = 22;
+    localparam CMP_IF_LE            = 23;
+    localparam PUSH_SUBROUTINE      = 24;
+    localparam POP_SUBROUTINE       = 25;
+    localparam UPDATE_PCOUNTER      = 26;
 
     // PCOUNTER
     reg [AWIDTH-1:0] pcounter;
 
-    // stack_operations
-    wire stack_push_operations, stack_pop_operations, stack_full_operations;
-    reg [BASE_WIDTH -1 :0] stack_data_in_operations,
-    reg [BASE_WIDTH -1 :0] stack_data_out_operations,
+    // ALU
+    alu alu_cpu (
+        .operand_a(operand_a),
+        .operand_b(operand_b),
+        .op_code(instruction[31:27]),
+        .result(result_alu)
+    );
 
+    // stack_operations
     stack #(.WIDTH_DATA(WIDTH_DATA), .DEPTH(32)) stack_operations (
         .clk(clk),
-        .rst(rst),
+        .reset(reset),
         .push(stack_push_operations),
         .pop(stack_pop_operations),
         .data_in(stack_data_in_operations),
@@ -93,13 +112,9 @@ module cpu #(
     );
 
     // stack_subroutines
-    wire stack_push_subroutines, stack_pop_subroutines, stack_full_subroutines;
-    reg [BASE_WIDTH -1 :0] stack_data_in_subroutines,
-    reg [BASE_WIDTH -1 :0] stack_data_out_subroutines,
-
     stack #(.WIDTH_DATA(WIDTH_DATA), .DEPTH(32)) stack_subroutines (
         .clk(clk),
-        .rst(rst),
+        .reset(reset),
         .push(stack_push_subroutines),
         .pop(stack_pop_subroutines),
         .data_in(stack_data_in_subroutines),
@@ -107,21 +122,22 @@ module cpu #(
         .full(stack_full_subroutines)
     );
 
-    // ALU
+    // Registers
+    reg [WIDTH_DATA-1:0] Temp1, Temp2, TOS;
 
-    alu alu_cpu (
-        .operand_a(operand_a),
-        .operand_b(operand_b),
-        .op_code(instruction[31:27]),
-        .result(result_alu)
-    );
-    // Todo: Instanciar ULA
+    // Control signals
+    reg [4:0] operation;
+    reg [WIDTH_DATA -6 :0] operand;
+    reg [5:0] state, next_state;
 
-    assign operation = instruction[WIDTH_DATA - 1 +: 5];
-    assign operand = instruction[WIDTH_DATA - 6 : 0];
+    // Attribute instruction to operation and operand
+    always @(instruction) begin
+        operation = instruction[WIDTH_DATA - 1 +: 5];
+        operand = instruction[WIDTH_DATA - 6 : 0];
+    end
 
     always @(posedge clk) begin
-        if(rst) begin
+        if(reset) begin
             state <= LOAD_INST;
             pcounter <= 0;
             //Verificar quais outras flags precisam zerar.
@@ -166,13 +182,13 @@ module cpu #(
                         address_memory_data = operand;
                     end
                     PUSH_I: begin
-                        next_state = PUSH_STACK; 
+                        next_state = PCOUNTER_INC; 
                         stack_data_in_operations = operand;
                         stack_push_operations = 1; //Both data must be stable in the next clock                
                     end
                     PUSH_T: begin
                         next_state = PCOUNTER_INC;
-                        stack_data_in_operations = temp1;
+                        stack_data_in_operations = Temp1;
                         stack_push_operations = 1;     
                     end             
                     POP: begin
@@ -212,9 +228,10 @@ module cpu #(
                         stack_data_in_subroutines = pcounter;
                         stack_push_subroutines = 1;
                     end
-                    RET:
+                    RET: begin
                         next_state = POP_SUBROUTINE;
                         stack_pop_subroutines = 1;
+                    end
                     default:
                         next_state = 0;
                 endcase                
@@ -237,10 +254,7 @@ module cpu #(
                 next_state = PCOUNTER_INC;
                 stack_data_in_operations = result_alu;
                 stack_push_operations = 1;                 
-            end
-            INC_PCOUNTER : begin
-                
-            end            
+            end           
             GET_DATA : begin
                 next_state = PUSH_M;
                 stack_push_operations = 1;
