@@ -7,7 +7,7 @@ module stack_tb;
     reg push;
     reg pop;
     reg [31:0] data_in;
-    wire [31:0] data_out;
+    wire [31:0] data_out_tb;
     wire full;
     wire empty;
 
@@ -18,7 +18,7 @@ module stack_tb;
         .push(push),
         .pop(pop),
         .data_in(data_in),
-        .data_out(data_out),
+        .data_out(data_out_tb),
         .full(full),
         .empty(empty)
     );
@@ -43,7 +43,7 @@ module stack_tb;
         push = 1;
         for (data_in = 1; data_in <= 5; data_in = data_in + 1) begin
             #10;
-            //$display("Push: %d", data_in);
+            $display("full: %d", full);
             if(full) begin
                 $display("Stack is full!");
             end
@@ -54,7 +54,7 @@ module stack_tb;
         pop = 1;
         while (!empty) begin
             #10;
-            //$display("Pop: %d", data_out);
+            $display("data_out_tb: %d", data_out_tb);
             if(empty) begin
                 $display("Stack is empty!");
             end
