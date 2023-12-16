@@ -26,21 +26,18 @@ module alu #(
         case (op_code)
             ADD: begin
                 result = operand_a + operand_b;
-                
             end
             SUB: begin
                 result = operand_a - operand_b;
-                
             end
             MUL: begin
                 result = operand_a * operand_b;
-                
             end
             DIV: begin
                 if (operand_b != 0) begin
                     result = operand_a / operand_b;
                 end else begin
-                    result = 32'b0;
+                    result = 0;
                 end
             end
             AND: begin
