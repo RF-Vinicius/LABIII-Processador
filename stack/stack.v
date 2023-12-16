@@ -5,10 +5,10 @@ module stack
     input reset,     
     input  push,      
     input  pop,      
-    input  [(WIDTH_DATA-1):0] data_in, 
-    output reg [(WIDTH_DATA-1):0] data_out, 
-    output  reg full,   
-    output  reg empty   
+    input  [WIDTH_DATA-1:0] data_in, 
+    output reg [WIDTH_DATA-1:0] data_out, 
+    output reg full,   
+    output reg empty   
 );
 
 reg [(WIDTH_DATA-1):0] stack[(DEPTH-1):0];
@@ -20,11 +20,6 @@ always @(topPositionStack) begin
 end
 
 always @(posedge clk) begin
-    //$display("topPositionStack: %d", topPositionStack);
-    //$display("push: %b", push);
-    //$display("full: %b", full);
-    $display("data_out: %d", data_out);
-
     if (reset) begin
         topPositionStack <= 10'b0;
         full <= 0;
@@ -39,7 +34,7 @@ always @(posedge clk) begin
             $display("Popping %d", stack[topPositionStack - 1]);
             data_out <= stack[topPositionStack - 1];
         end
-        
+        // Todo: Tirar latches
     end
 end
 

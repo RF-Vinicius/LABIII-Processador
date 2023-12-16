@@ -40,7 +40,6 @@ module cpu #(
         output reg stack_pop_subroutines, 
         input wire [WIDTH_DATA -1 :0] stack_data_out_subroutines,
         output reg [WIDTH_DATA -1 :0] stack_data_in_subroutines
-
     );
 
     // Instructions
@@ -152,7 +151,6 @@ module cpu #(
     end
 
     always @(posedge clk) begin
-        //$display("CLK - %d \t - stack_data_out_operations: %d",  clk, stack_data_out_operations);  
         if(reset) begin
             state <= LOAD_INST;
             pcounter <= 0;
@@ -439,6 +437,7 @@ module cpu #(
                 $display("State - POP_SUBROUTINE");
                 next_state = UPDATE_PCOUNTER;
                 operand = stack_data_out_subroutines;
+                $display("stack_full_subroutines: %d", stack_full_subroutines);
                 stack_pop_subroutines = 0;
             end
             UPDATE_PCOUNTER : begin
