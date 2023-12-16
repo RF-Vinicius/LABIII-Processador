@@ -1,98 +1,66 @@
 `timescale 1ns/1ns
-
+`include "stack.v"
 
 module stack_tb;
-reg clk, reset, push, pop;
-reg [3:0] data_in;
-wire [3:0] data_out;
-wire full;
-wire empty;
+    reg clk;
+    reg reset;
+    reg push;
+    reg pop;
+    reg [31:0] data_in;
+    wire [31:0] data_out;
+    wire full;
+    wire empty;
 
-stack #(4, 10) uut (
-  .clk(clk),
-  .reset(reset),
-  .push(push),
-  .pop(pop),
-  .data_in(data_in),
-  .data_out(data_out),
-  .full(full),
-  .empty(empty)
-);
+    // Instantiate the stack module
+    stack #(.WIDTH_DATA(32), .DEPTH(10)) uut (
+        .clk(clk),
+        .reset(reset),
+        .push(push),
+        .pop(pop),
+        .data_in(data_in),
+        .data_out(data_out),
+        .full(full),
+        .empty(empty)
+    );
 
+    // Clock generation
+    always #5 clk = ~clk;
 
-//Definição do clock
-initial begin
-    clk = 1'b0;
-    forever #1 clk = ~clk;
-end
+    initial begin
+        // Initialize signals
+        clk = 0;
+        reset = 0;
+        push = 0;
+        pop = 0;
+        data_in = 0;
 
+        // Apply reset
+        #10;
+        reset = 0;
+        #10;
 
-initial begin
-    reset = 1'b1;
-        #2;
-    reset = 1'b0;
-end
+        // Test push operation
+        push = 1;
+        for (data_in = 1; data_in <= 5; data_in = data_in + 1) begin
+            #10;
+            //$display("Push: %d", data_in);
+            if(full) begin
+                $display("Stack is full!");
+            end
+        end
+        push = 0;
+        $display("\n");
+        // Test pop operation
+        pop = 1;
+        while (!empty) begin
+            #10;
+            //$display("Pop: %d", data_out);
+            if(empty) begin
+                $display("Stack is empty!");
+            end
+        end
+        pop = 0;
 
-
-initial begin
-    //PUSH 01
-    #2;
-    data_in <= 4'b1010;
-    push = 1'b1;
-    #2;
-    push = 1'b0;
-
-    #2;
-    //PUSH 02
-    data_in <= 4'b1111;
-    push = 1'b1;
-    #2;
-    push = 1'b0;
-
-    #3;
-
-    //POP 01
-    pop = 1;
-    #3;
-    pop = 0;
-
-/*
-    //PUSH 03
-    data_in <= 4'b0001;
-    push = 1'b1;
-    #1;
-    push = 1'b0;
-
-    #1;
-
-    //PUSH 04
-    data_in <= 4'b1010;
-    push = 1'b1;
-    #1;
-    push = 1'b0;
-
-    #1;
-
-    //POP 01
-    pop = 1;
-    #1;
-    pop = 0;
-    #1;
-
-    //POP 02
-    pop = 1;
-    #1;
-    pop = 0;
-    #1;
-
-    //PUSH 05
-    data_in <= 4'b1100;
-    push = 1'b1;
-    #1;
-    push = 1'b0;
-
-    #1;*/
-end
-
-
+        $finish;
+    end
 endmodule
