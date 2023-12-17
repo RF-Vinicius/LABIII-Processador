@@ -1,5 +1,5 @@
-`include "alu/alu.v"
-`include "stack/stack.v"
+//`include "alu/alu.v"
+//`include "stack/stack.v"
 
 module cpu #(
     parameter integer WIDTH_DATA = 16, parameter integer AWIDTH = 5
@@ -100,13 +100,14 @@ module cpu #(
     // PCOUNTER
     reg [AWIDTH-1:0] pcounter = 0, pcounter_next;
 
-    // ALU
+    /*// ALU
     alu  #(.WIDTH_DATA(WIDTH_DATA))alu_cpu (
         .operand_a(operand_a),
         .operand_b(operand_b),
         .op_code(instruction[WIDTH_DATA-1:WIDTH_DATA-5]),
         .result(result_alu)
     );
+
 
     // stack_operations
     stack #(.WIDTH_DATA(WIDTH_DATA), .DEPTH(32)) stack_operations (
@@ -130,7 +131,7 @@ module cpu #(
         .data_out(stack_data_out_subroutines),
         .full(stack_full_subroutines),
         .empty(stack_empty_subroutines)
-    );
+    );*/
 
     // Registers
     reg [WIDTH_DATA-1:0] Temp1 = 0, Temp2 = 0, TOS = 0;
@@ -164,7 +165,6 @@ module cpu #(
             RESET: begin
                 $display("State - RESET");
                 state = LOAD_INST;
-                pcounter = 0;
                 pcounter_next = 0;
                 Temp1 = 0;
                 Temp2 = 0;
