@@ -21,9 +21,6 @@ end
 
 always @(posedge clk) begin
     if (reset) begin
-        topPositionStack <= 10'b0;
-        full <= 0;
-        empty <= 01;
         data_out <= 0;
     end else begin
         if(push && !full) begin
@@ -53,7 +50,9 @@ end
 
 // Atribuindo novo valor de topPositionStack
 always @(posedge clk) begin
-    if (!reset) begin
+    if (reset) begin
+        topPositionStack <= 10'b0;
+    end else begin
         topPositionStack <= topPositionStack_next;
     end
 end

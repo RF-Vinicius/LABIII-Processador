@@ -159,8 +159,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 496 160)
 		(output)
-		(text "op_ALU[3..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "op_ALU[3..0]" (rect 419 155 475 167)(font "Arial" ))
+		(text "op_ALU[4..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "op_ALU[4..0]" (rect 418 155 475 167)(font "Arial" ))
 		(line (pt 496 160)(pt 480 160)(line_width 3))
 	)
 	(port

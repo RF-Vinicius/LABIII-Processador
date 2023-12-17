@@ -179,6 +179,7 @@ module cpu #(
                 operand_a = 0;
                 operand_b = 0;
                 op_ALU = 0;
+                memory_data_out = 16'b0;
             end
             LOAD_INST : begin
                 $display("State - LOAD_INST");

@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.000000'
+Slack : -8.127
+TNS   : -239.877
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.CMP_IF_EQ'
+Slack : -5.969
+TNS   : -165.806
+
+Type  : Slow 1200mV 85C Model Setup 'instruction[11]'
+Slack : -5.785
+TNS   : -115.250
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -5.460
+TNS   : -1129.381
+
+Type  : Slow 1200mV 85C Model Hold 'instruction[11]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.000000'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -364.085
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -23.831
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -7.474
+TNS   : -223.754
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.CMP_IF_EQ'
+Slack : -5.487
+TNS   : -155.157
+
+Type  : Slow 1200mV 0C Model Setup 'instruction[11]'
+Slack : -5.332
+TNS   : -108.897
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.847
+TNS   : -1000.381
+
+Type  : Slow 1200mV 0C Model Hold 'instruction[11]'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -364.085
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -17.926
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -4.079
+TNS   : -110.226
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.CMP_IF_EQ'
+Slack : -2.940
+TNS   : -67.285
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.845
+TNS   : -539.520
+
+Type  : Fast 1200mV 0C Model Setup 'instruction[11]'
+Slack : -2.600
+TNS   : -44.145
+
+Type  : Fast 1200mV 0C Model Hold 'instruction[11]'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.097
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -303.895
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -22.406
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.CMP_IF_EQ'
+Slack : 0.236
+TNS   : 0.000
+
+------------------------------------------------------------
