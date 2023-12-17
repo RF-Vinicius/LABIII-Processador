@@ -1,5 +1,5 @@
 Fitter report for Processor0Address
-Sun Dec 17 00:38:26 2023
+Sun Dec 17 12:40:20 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Dec 17 00:38:26 2023       ;
+; Fitter Status                      ; Successful - Sun Dec 17 12:40:20 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Processor0Address                           ;
 ; Top-level Entity Name              ; Processor0Address                           ;
@@ -141,15 +141,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.1%      ;
+;     Processors 2-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -191,7 +191,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/vini9/Processador-PCID/QuartusVFinal/output_files/Processor0Address.pin.
+The pin-out file can be found in C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/output_files/Processor0Address.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1316,7 +1316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (119006): Selected device EP4CE115F29C7 for design "Processor0Address"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1382,18 +1382,18 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
-Info (144001): Generated suppressed messages file C:/Users/vini9/Processador-PCID/QuartusVFinal/output_files/Processor0Address.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (144001): Generated suppressed messages file C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/output_files/Processor0Address.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5792 megabytes
-    Info: Processing ended: Sun Dec 17 00:38:26 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 6661 megabytes
+    Info: Processing ended: Sun Dec 17 12:40:20 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/vini9/Processador-PCID/QuartusVFinal/output_files/Processor0Address.fit.smsg.
+The suppressed messages can be found in C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/output_files/Processor0Address.fit.smsg.
 
 

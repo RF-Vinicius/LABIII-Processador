@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor0Address
-Sun Dec 17 00:38:15 2023
+Sun Dec 17 12:40:10 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 17 00:38:15 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 17 12:40:10 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Processor0Address                           ;
 ; Top-level Entity Name              ; Processor0Address                           ;
@@ -165,8 +165,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -176,31 +176,31 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; ../Quartus-pcid/Processor.v      ; yes             ; User Verilog HDL File              ; C:/Users/vini9/Processador-PCID/Quartus-pcid/Processor.v                     ;         ;
-; ../stack/stack.v                 ; yes             ; User Verilog HDL File              ; C:/Users/vini9/Processador-PCID/stack/stack.v                                ;         ;
-; ../alu/alu.v                     ; yes             ; User Verilog HDL File              ; C:/Users/vini9/Processador-PCID/alu/alu.v                                    ;         ;
-; ../cpu.v                         ; yes             ; User Verilog HDL File              ; C:/Users/vini9/Processador-PCID/cpu.v                                        ;         ;
-; Processor0Address.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/vini9/Processador-PCID/QuartusVFinal/Processor0Address.bdf          ;         ;
-; MemoryInstruction.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd          ;         ;
-; MemoryData.vhd                   ; yes             ; User Wizard-Generated File         ; C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd                 ;         ;
-; InstructionsMemoryIn.mif         ; yes             ; User Memory Initialization File    ; C:/Users/vini9/Processador-PCID/QuartusVFinal/InstructionsMemoryIn.mif       ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_1et3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf         ;         ;
-; db/altsyncram_kup3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; ../Quartus-pcid/Processor.v      ; yes             ; User Verilog HDL File              ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Quartus-pcid/Processor.v               ;         ;
+; ../stack/stack.v                 ; yes             ; User Verilog HDL File              ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v                          ;         ;
+; ../alu/alu.v                     ; yes             ; User Verilog HDL File              ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/alu/alu.v                              ;         ;
+; ../cpu.v                         ; yes             ; User Verilog HDL File              ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v                                  ;         ;
+; Processor0Address.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/Processor0Address.bdf    ;         ;
+; MemoryInstruction.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd    ;         ;
+; MemoryData.vhd                   ; yes             ; User Wizard-Generated File         ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd           ;         ;
+; InstructionsMemoryIn.mif         ; yes             ; User Memory Initialization File    ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/InstructionsMemoryIn.mif ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                 ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc          ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                    ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                 ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                 ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                  ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                     ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                     ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                   ;         ;
+; db/altsyncram_1et3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf   ;         ;
+; db/altsyncram_kup3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf   ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -255,40 +255,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Processor0Address|Processor:inst|cpu:b2v_inst|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-+-------------------------+-------------------------+-------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
-; Name                    ; state.UPDATE_SUBROUTINE ; state.RESET ; state.GET_TEMP1 ; state.UPDATE_PCOUNTER ; state.POP_SUBROUTINE ; state.PUSH_SUBROUTINE ; state.CMP_IF_LE ; state.POP_IF_LE ; state.CMP_IF_GE ; state.POP_IF_GE ; state.CMP_IF_LT ; state.POP_IF_LT ; state.CMP_IF_GT ; state.POP_IF_GT ; state.CMP_IF_EQ ; state.POP_IF_EQ ; state.WRITE_DATA ; state.ENABLE_WRITE_DATA ; state.PUSH_M ; state.GET_DATA ; state.PUSH_OP_RESULT ; state.OP_ALU ; state.POP_TEMP2 ; state.POP_TEMP1 ; state.DECODE ; state.PCOUNTER_INC ; state.GET_INST ; state.000000 ;
-+-------------------------+-------------------------+-------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
-; state.000000            ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 0            ;
-; state.GET_INST          ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 1              ; 1            ;
-; state.PCOUNTER_INC      ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 1                  ; 0              ; 1            ;
-; state.DECODE            ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 1            ; 0                  ; 0              ; 1            ;
-; state.POP_TEMP1         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 1               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_TEMP2         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 1               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.OP_ALU            ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 1            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.PUSH_OP_RESULT    ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 1                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.GET_DATA          ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 1              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.PUSH_M            ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 1            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.ENABLE_WRITE_DATA ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 1                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.WRITE_DATA        ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_IF_EQ         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.CMP_IF_EQ         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_IF_GT         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.CMP_IF_GT         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_IF_LT         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.CMP_IF_LT         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_IF_GE         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.CMP_IF_GE         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_IF_LE         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.CMP_IF_LE         ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.PUSH_SUBROUTINE   ; 0                       ; 0           ; 0               ; 0                     ; 0                    ; 1                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.POP_SUBROUTINE    ; 0                       ; 0           ; 0               ; 0                     ; 1                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.UPDATE_PCOUNTER   ; 0                       ; 0           ; 0               ; 1                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.GET_TEMP1         ; 0                       ; 0           ; 1               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.RESET             ; 0                       ; 1           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-; state.UPDATE_SUBROUTINE ; 1                       ; 0           ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
-+-------------------------+-------------------------+-------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Processor0Address|Processor:inst|cpu:b2v_inst|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++-------------------------+-------------------------+-------------+-----------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
+; Name                    ; state.UPDATE_SUBROUTINE ; state.RESET ; state.GET_TEMP2 ; state.GET_TEMP1 ; state.UPDATE_PCOUNTER ; state.POP_SUBROUTINE ; state.PUSH_SUBROUTINE ; state.CMP_IF_LE ; state.POP_IF_LE ; state.CMP_IF_GE ; state.POP_IF_GE ; state.CMP_IF_LT ; state.POP_IF_LT ; state.CMP_IF_GT ; state.POP_IF_GT ; state.CMP_IF_EQ ; state.POP_IF_EQ ; state.WRITE_DATA ; state.ENABLE_WRITE_DATA ; state.PUSH_M ; state.GET_DATA ; state.PUSH_OP_RESULT ; state.OP_ALU ; state.POP_TEMP2 ; state.POP_TEMP1 ; state.DECODE ; state.PCOUNTER_INC ; state.GET_INST ; state.000000 ;
++-------------------------+-------------------------+-------------+-----------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
+; state.000000            ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 0            ;
+; state.GET_INST          ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 1              ; 1            ;
+; state.PCOUNTER_INC      ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 1                  ; 0              ; 1            ;
+; state.DECODE            ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 1            ; 0                  ; 0              ; 1            ;
+; state.POP_TEMP1         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 1               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_TEMP2         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 1               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.OP_ALU            ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 1            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.PUSH_OP_RESULT    ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 1                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.GET_DATA          ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 1              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.PUSH_M            ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 1            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.ENABLE_WRITE_DATA ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 1                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.WRITE_DATA        ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_IF_EQ         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.CMP_IF_EQ         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_IF_GT         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.CMP_IF_GT         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_IF_LT         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.CMP_IF_LT         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_IF_GE         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.CMP_IF_GE         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_IF_LE         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.CMP_IF_LE         ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.PUSH_SUBROUTINE   ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 1                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.POP_SUBROUTINE    ; 0                       ; 0           ; 0               ; 0               ; 0                     ; 1                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.UPDATE_PCOUNTER   ; 0                       ; 0           ; 0               ; 0               ; 1                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.GET_TEMP1         ; 0                       ; 0           ; 0               ; 1               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.GET_TEMP2         ; 0                       ; 0           ; 1               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.RESET             ; 0                       ; 1           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
+; state.UPDATE_SUBROUTINE ; 1                       ; 0           ; 0               ; 0               ; 0                     ; 0                    ; 0                     ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                ; 0                       ; 0            ; 0              ; 0                    ; 0            ; 0               ; 0               ; 0            ; 0                  ; 0              ; 1            ;
++-------------------------+-------------------------+-------------+-----------------+-----------------+-----------------------+----------------------+-----------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+-------------------------+--------------+----------------+----------------------+--------------+-----------------+-----------------+--------------+--------------------+----------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -305,8 +306,6 @@ Encoding Type:  One-Hot
 ; Processor:inst|cpu:b2v_inst|state~5                               ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state~6                               ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state~7                               ; Lost fanout                                                         ;
-; Processor:inst|cpu:b2v_inst|state.OP_ALU                          ; Stuck at GND due to stuck port data_in                              ;
-; Processor:inst|cpu:b2v_inst|state.PUSH_OP_RESULT                  ; Stuck at GND due to stuck port data_in                              ;
 ; Processor:inst|stack:b2v_stack_operations|data_out[0..15]         ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|pcounter[0..4]                        ; Lost fanout                                                         ;
 ; Processor:inst|stack:b2v_stack_operations|topPositionStack[0..9]  ; Lost fanout                                                         ;
@@ -318,6 +317,8 @@ Encoding Type:  One-Hot
 ; Processor:inst|cpu:b2v_inst|state.DECODE                          ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.POP_TEMP1                       ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.POP_TEMP2                       ; Lost fanout                                                         ;
+; Processor:inst|cpu:b2v_inst|state.OP_ALU                          ; Lost fanout                                                         ;
+; Processor:inst|cpu:b2v_inst|state.PUSH_OP_RESULT                  ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.GET_DATA                        ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.PUSH_M                          ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.ENABLE_WRITE_DATA               ; Lost fanout                                                         ;
@@ -335,9 +336,10 @@ Encoding Type:  One-Hot
 ; Processor:inst|cpu:b2v_inst|state.POP_SUBROUTINE                  ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.UPDATE_PCOUNTER                 ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.GET_TEMP1                       ; Lost fanout                                                         ;
+; Processor:inst|cpu:b2v_inst|state.GET_TEMP2                       ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.RESET                           ; Lost fanout                                                         ;
 ; Processor:inst|cpu:b2v_inst|state.UPDATE_SUBROUTINE               ; Lost fanout                                                         ;
-; Total Number of Removed Registers = 91                            ;                                                                     ;
+; Total Number of Removed Registers = 92                            ;                                                                     ;
 +-------------------------------------------------------------------+---------------------------------------------------------------------+
 
 
@@ -346,52 +348,6 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
 ; Register name                                           ; Reason for Removal        ; Registers Removed due to This Register                          ;
 +---------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
-; Processor:inst|cpu:b2v_inst|state.OP_ALU                ; Stuck at GND              ; Processor:inst|cpu:b2v_inst|state.PUSH_OP_RESULT,               ;
-;                                                         ; due to stuck port data_in ; Processor:inst|stack:b2v_stack_operations|data_out[1],          ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[2],          ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[3],          ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[4],          ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|pcounter[0],                        ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[9],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[8],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[7],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[4],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[2],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[1],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[0],  ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[0],         ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[1],         ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[2],         ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[3],         ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[4],         ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[9], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[8], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[7], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[6], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[5], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[4], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[3], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[2], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[1], ;
-;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[0], ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.000000,                       ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.GET_INST,                     ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.DECODE,                       ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.GET_DATA,                     ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PUSH_M,                       ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.ENABLE_WRITE_DATA,            ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_EQ,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.CMP_IF_EQ,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_GT,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.CMP_IF_GT,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_LT,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.CMP_IF_LT,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_GE,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.CMP_IF_LE,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.UPDATE_PCOUNTER,              ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.GET_TEMP1,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.RESET,                        ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.UPDATE_SUBROUTINE             ;
 ; Processor:inst|stack:b2v_stack_subroutines|data_out[10] ; Stuck at GND              ; Processor:inst|stack:b2v_stack_operations|data_out[0],          ;
 ;                                                         ; due to stuck port data_in ; Processor:inst|stack:b2v_stack_operations|data_out[5],          ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[6],          ;
@@ -404,15 +360,45 @@ Encoding Type:  One-Hot
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[13],         ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[14],         ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|data_out[15],         ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[9],  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[8],  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[7],  ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[6],  ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[5],  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[4],  ;
 ;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[3],  ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PCOUNTER_INC                  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[2],  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[1],  ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_operations|topPositionStack[0],  ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PCOUNTER_INC,                 ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.DECODE,                       ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PUSH_OP_RESULT,               ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PUSH_M,                       ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_GT,                    ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_LT,                    ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.RESET                         ;
+; Processor:inst|cpu:b2v_inst|pcounter[0]                 ; Lost Fanouts              ; Processor:inst|cpu:b2v_inst|pcounter[1],                        ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|data_out[0],         ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[9], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[8], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[7], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[6], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[5], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[4], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[3], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[2], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[1], ;
+;                                                         ;                           ; Processor:inst|stack:b2v_stack_subroutines|topPositionStack[0], ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.CMP_IF_LE,                    ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.UPDATE_PCOUNTER,              ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.UPDATE_SUBROUTINE             ;
 ; Processor:inst|cpu:b2v_inst|state~2                     ; Lost Fanouts              ; Processor:inst|cpu:b2v_inst|state.POP_TEMP2,                    ;
-;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PUSH_SUBROUTINE               ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.PUSH_SUBROUTINE,              ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_SUBROUTINE                ;
 ; Processor:inst|cpu:b2v_inst|state~3                     ; Lost Fanouts              ; Processor:inst|cpu:b2v_inst|state.POP_TEMP1,                    ;
 ;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_LE                     ;
-; Processor:inst|cpu:b2v_inst|state~4                     ; Lost Fanouts              ; Processor:inst|cpu:b2v_inst|state.POP_SUBROUTINE                ;
+; Processor:inst|cpu:b2v_inst|state~6                     ; Lost Fanouts              ; Processor:inst|cpu:b2v_inst|state.GET_DATA,                     ;
+;                                                         ;                           ; Processor:inst|cpu:b2v_inst|state.POP_IF_EQ                     ;
 +---------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
 
 
@@ -436,14 +422,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_operations|data_out[5]          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_subroutines|data_out[4]         ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_operations|topPositionStack[7]  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_subroutines|topPositionStack[2] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_operations|data_out[7]          ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_subroutines|data_out[0]         ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_operations|topPositionStack[0]  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Processor0Address|Processor:inst|stack:b2v_stack_subroutines|topPositionStack[4] ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|state                              ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector116                        ;
-; 10:1               ; 5 bits    ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector163                        ;
-; 24:1               ; 5 bits    ; 80 LEs        ; 45 LEs               ; 35 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector96                         ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector117                        ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector5                          ;
+; 24:1               ; 5 bits    ; 80 LEs        ; 45 LEs               ; 35 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector104                        ;
 ; 25:1               ; 10 bits   ; 160 LEs       ; 90 LEs               ; 70 LEs                 ; No         ; |Processor0Address|Processor:inst|cpu:b2v_inst|Selector90                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
@@ -689,220 +675,219 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 17 00:38:01 2023
+    Info: Processing started: Sun Dec 17 12:39:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor0Address -c Processor0Address
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/vini9/processador-pcid/quartus-pcid/processor.v
-    Info (12023): Found entity 1: Processor File: C:/Users/vini9/Processador-PCID/Quartus-pcid/Processor.v Line: 19
-Info (12021): Found 1 design units, including 1 entities, in source file /users/vini9/processador-pcid/stack/stack.v
-    Info (12023): Found entity 1: stack File: C:/Users/vini9/Processador-PCID/stack/stack.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/vini9/processador-pcid/alu/alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/vini9/Processador-PCID/alu/alu.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/vini9/processador-pcid/cpu.v
-    Info (12023): Found entity 1: cpu File: C:/Users/vini9/Processador-PCID/cpu.v Line: 4
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/leand/ufba/trab_pcid/processador-pcid/quartus-pcid/processor.v
+    Info (12023): Found entity 1: Processor File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Quartus-pcid/Processor.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /users/leand/ufba/trab_pcid/processador-pcid/stack/stack.v
+    Info (12023): Found entity 1: stack File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/leand/ufba/trab_pcid/processador-pcid/alu/alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/alu/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/leand/ufba/trab_pcid/processador-pcid/cpu.v
+    Info (12023): Found entity 1: cpu File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file processor0address.bdf
     Info (12023): Found entity 1: Processor0Address
 Info (12021): Found 2 design units, including 1 entities, in source file memoryinstruction.vhd
-    Info (12022): Found design unit 1: memoryinstruction-SYN File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 52
-    Info (12023): Found entity 1: MemoryInstruction File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 42
+    Info (12022): Found design unit 1: memoryinstruction-SYN File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 52
+    Info (12023): Found entity 1: MemoryInstruction File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file memorydata.vhd
-    Info (12022): Found design unit 1: memorydata-SYN File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 54
-    Info (12023): Found entity 1: MemoryData File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 42
+    Info (12022): Found design unit 1: memorydata-SYN File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 54
+    Info (12023): Found entity 1: MemoryData File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 42
 Info (12127): Elaborating entity "Processor0Address" for the top level hierarchy
 Info (12128): Elaborating entity "Processor" for hierarchy "Processor:inst"
-Info (12128): Elaborating entity "alu" for hierarchy "Processor:inst|alu:b2v_Alu" File: C:/Users/vini9/Processador-PCID/Quartus-pcid/Processor.v Line: 67
-Warning (10230): Verilog HDL assignment warning at alu.v(60): truncated value with size 32 to match size of target (16) File: C:/Users/vini9/Processador-PCID/alu/alu.v Line: 60
-Info (12128): Elaborating entity "cpu" for hierarchy "Processor:inst|cpu:b2v_inst" File: C:/Users/vini9/Processador-PCID/Quartus-pcid/Processor.v Line: 96
-Warning (10230): Verilog HDL assignment warning at cpu.v(200): truncated value with size 32 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 200
-Warning (10230): Verilog HDL assignment warning at cpu.v(240): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 240
-Warning (10230): Verilog HDL assignment warning at cpu.v(359): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 359
-Warning (10230): Verilog HDL assignment warning at cpu.v(376): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 376
-Warning (10230): Verilog HDL assignment warning at cpu.v(393): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 393
-Warning (10230): Verilog HDL assignment warning at cpu.v(409): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 409
-Warning (10230): Verilog HDL assignment warning at cpu.v(425): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 425
-Warning (10230): Verilog HDL assignment warning at cpu.v(440): truncated value with size 11 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 440
-Warning (10230): Verilog HDL assignment warning at cpu.v(453): truncated value with size 16 to match size of target (5) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 453
-Warning (10272): Verilog HDL Case Statement warning at cpu.v(303): case item expression covers a value already covered by a previous case item File: C:/Users/vini9/Processador-PCID/cpu.v Line: 303
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "pcounter_next", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "Temp1", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "Temp2", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "TOS", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_push_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_pop_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_data_in_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_push_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_pop_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "stack_data_in_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "operand_a", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "operand_b", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "op_ALU", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "memory_data_out", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "address_memory_inst", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "write_data_enable", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "read_data_enable", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Warning (10240): Verilog HDL Always Construct warning at cpu.v(164): inferring latch(es) for variable "address_memory_data", which holds its previous value in one or more paths through the always construct File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_data[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_data[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_data[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_data[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_data[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "read_data_enable" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "write_data_enable" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_inst[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_inst[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_inst[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_inst[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "address_memory_inst[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "memory_data_out[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "op_ALU[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "op_ALU[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "op_ALU[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "op_ALU[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "op_ALU[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_b[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "operand_a[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_subroutines[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_pop_subroutines" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_push_subroutines" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_data_in_operations[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_pop_operations" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "stack_push_operations" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "TOS[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp2[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[5]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[6]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[7]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[8]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[9]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[10]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[11]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[12]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[13]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[14]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "Temp1[15]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "pcounter_next[0]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "pcounter_next[1]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "pcounter_next[2]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "pcounter_next[3]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10041): Inferred latch for "pcounter_next[4]" at cpu.v(164) File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (12128): Elaborating entity "stack" for hierarchy "Processor:inst|stack:b2v_stack_operations" File: C:/Users/vini9/Processador-PCID/Quartus-pcid/Processor.v Line: 109
-Warning (10230): Verilog HDL assignment warning at stack.v(41): truncated value with size 32 to match size of target (10) File: C:/Users/vini9/Processador-PCID/stack/stack.v Line: 41
-Warning (10230): Verilog HDL assignment warning at stack.v(44): truncated value with size 32 to match size of target (10) File: C:/Users/vini9/Processador-PCID/stack/stack.v Line: 44
+Info (12128): Elaborating entity "alu" for hierarchy "Processor:inst|alu:b2v_Alu" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Quartus-pcid/Processor.v Line: 67
+Warning (10230): Verilog HDL assignment warning at alu.v(60): truncated value with size 32 to match size of target (16) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/alu/alu.v Line: 60
+Info (12128): Elaborating entity "cpu" for hierarchy "Processor:inst|cpu:b2v_inst" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Quartus-pcid/Processor.v Line: 96
+Warning (10230): Verilog HDL assignment warning at cpu.v(201): truncated value with size 32 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 201
+Warning (10230): Verilog HDL assignment warning at cpu.v(241): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 241
+Warning (10230): Verilog HDL assignment warning at cpu.v(360): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 360
+Warning (10230): Verilog HDL assignment warning at cpu.v(377): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 377
+Warning (10230): Verilog HDL assignment warning at cpu.v(394): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 394
+Warning (10230): Verilog HDL assignment warning at cpu.v(410): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 410
+Warning (10230): Verilog HDL assignment warning at cpu.v(426): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 426
+Warning (10230): Verilog HDL assignment warning at cpu.v(441): truncated value with size 11 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 441
+Warning (10230): Verilog HDL assignment warning at cpu.v(454): truncated value with size 32 to match size of target (5) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 454
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "pcounter_next", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "Temp1", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "Temp2", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "TOS", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_push_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_pop_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_data_in_operations", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_push_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_pop_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "stack_data_in_subroutines", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "operand_a", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "operand_b", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "op_ALU", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "memory_data_out", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "address_memory_inst", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "write_data_enable", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "read_data_enable", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at cpu.v(165): inferring latch(es) for variable "address_memory_data", which holds its previous value in one or more paths through the always construct File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_data[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_data[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_data[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_data[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_data[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "read_data_enable" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "write_data_enable" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_inst[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_inst[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_inst[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_inst[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "address_memory_inst[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "memory_data_out[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "op_ALU[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "op_ALU[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "op_ALU[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "op_ALU[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "op_ALU[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_b[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "operand_a[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_subroutines[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_pop_subroutines" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_push_subroutines" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_data_in_operations[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_pop_operations" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "stack_push_operations" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "TOS[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp2[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[5]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[6]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[7]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[8]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[9]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[10]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[11]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[12]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[13]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[14]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "Temp1[15]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "pcounter_next[0]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "pcounter_next[1]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "pcounter_next[2]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "pcounter_next[3]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10041): Inferred latch for "pcounter_next[4]" at cpu.v(165) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (12128): Elaborating entity "stack" for hierarchy "Processor:inst|stack:b2v_stack_operations" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Quartus-pcid/Processor.v Line: 109
+Warning (10230): Verilog HDL assignment warning at stack.v(41): truncated value with size 32 to match size of target (10) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v Line: 41
+Warning (10230): Verilog HDL assignment warning at stack.v(44): truncated value with size 32 to match size of target (10) File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v Line: 44
 Info (12128): Elaborating entity "MemoryInstruction" for hierarchy "MemoryInstruction:inst6"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "MemoryInstruction:inst6|altsyncram:altsyncram_component" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
-Info (12130): Elaborated megafunction instantiation "MemoryInstruction:inst6|altsyncram:altsyncram_component" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
-Info (12133): Instantiated megafunction "MemoryInstruction:inst6|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MemoryInstruction:inst6|altsyncram:altsyncram_component" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "MemoryInstruction:inst6|altsyncram:altsyncram_component" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
+Info (12133): Instantiated megafunction "MemoryInstruction:inst6|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryInstruction.vhd Line: 59
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -954,12 +939,12 @@ Info (12133): Instantiated megafunction "MemoryInstruction:inst6|altsyncram:alts
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1et3.tdf
-    Info (12023): Found entity 1: altsyncram_1et3 File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_1et3 File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_1et3" for hierarchy "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "MemoryData" for hierarchy "MemoryData:inst4"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "MemoryData:inst4|altsyncram:altsyncram_component" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
-Info (12130): Elaborated megafunction instantiation "MemoryData:inst4|altsyncram:altsyncram_component" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
-Info (12133): Instantiated megafunction "MemoryData:inst4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/vini9/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MemoryData:inst4|altsyncram:altsyncram_component" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "MemoryData:inst4|altsyncram:altsyncram_component" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
+Info (12133): Instantiated megafunction "MemoryData:inst4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/MemoryData.vhd Line: 61
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1011,47 +996,47 @@ Info (12133): Instantiated megafunction "MemoryData:inst4|altsyncram:altsyncram_
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kup3.tdf
-    Info (12023): Found entity 1: altsyncram_kup3 File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_kup3 File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kup3" for hierarchy "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "Processor:inst|stack:b2v_stack_operations|stack" is uninferred due to asynchronous read logic File: C:/Users/vini9/Processador-PCID/stack/stack.v Line: 14
-    Info (276004): RAM logic "Processor:inst|stack:b2v_stack_subroutines|stack" is uninferred due to inappropriate RAM size File: C:/Users/vini9/Processador-PCID/stack/stack.v Line: 14
+    Info (276007): RAM logic "Processor:inst|stack:b2v_stack_operations|stack" is uninferred due to asynchronous read logic File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v Line: 14
+    Info (276004): RAM logic "Processor:inst|stack:b2v_stack_subroutines|stack" is uninferred due to inappropriate RAM size File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/stack/stack.v Line: 14
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[11]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 276
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[12]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 298
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[13]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 320
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[14]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 342
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[15]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 364
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[0]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 34
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[1]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 56
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[2]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 78
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[3]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 100
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[4]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 122
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[0]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 36
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[1]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 58
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[2]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 80
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[3]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 102
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[4]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 124
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[5]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 144
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[5]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 146
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[6]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 166
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[6]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 168
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[7]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 188
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[7]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 190
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[8]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 210
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[8]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 212
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[9]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 232
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[9]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 234
-        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[10]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 254
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[10]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 256
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[11]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 278
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[12]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 300
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[13]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 322
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[14]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 344
-        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[15]" File: C:/Users/vini9/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 366
-Info (17049): 78 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/vini9/Processador-PCID/QuartusVFinal/output_files/Processor0Address.map.smsg
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[11]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 276
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[12]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 298
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[13]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 320
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[14]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 342
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[15]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 364
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[0]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 34
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[1]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 56
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[2]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 78
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[3]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 100
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[4]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 122
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[0]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 36
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[1]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 58
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[2]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 80
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[3]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 102
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[4]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 124
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[5]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 144
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[5]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 146
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[6]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 166
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[6]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 168
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[7]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 188
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[7]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 190
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[8]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 210
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[8]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 212
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[9]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 232
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[9]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 234
+        Warning (14320): Synthesized away node "MemoryInstruction:inst6|altsyncram:altsyncram_component|altsyncram_1et3:auto_generated|q_a[10]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_1et3.tdf Line: 254
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[10]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 256
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[11]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 278
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[12]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 300
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[13]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 322
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[14]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 344
+        Warning (14320): Synthesized away node "MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated|q_a[15]" File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/db/altsyncram_kup3.tdf Line: 366
+Info (17049): 81 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/output_files/Processor0Address.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
@@ -1060,16 +1045,16 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Sun Dec 17 00:38:15 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:14
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Sun Dec 17 12:40:10 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/vini9/Processador-PCID/QuartusVFinal/output_files/Processor0Address.map.smsg.
+The suppressed messages can be found in C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/QuartusVFinal/output_files/Processor0Address.map.smsg.
 
 

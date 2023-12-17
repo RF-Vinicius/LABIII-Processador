@@ -100,7 +100,8 @@ module cpu #(
     // PCOUNTER
     reg [AWIDTH-1:0] pcounter = 0, pcounter_next;
 
-    /*// ALU
+    /*
+    // ALU
     alu  #(.WIDTH_DATA(WIDTH_DATA))alu_cpu (
         .operand_a(operand_a),
         .operand_b(operand_b),
@@ -131,8 +132,8 @@ module cpu #(
         .data_out(stack_data_out_subroutines),
         .full(stack_full_subroutines),
         .empty(stack_empty_subroutines)
-    );*/
-
+    );
+    */
     // Registers
     reg [WIDTH_DATA-1:0] Temp1 = 0, Temp2 = 0, TOS = 0;
 
@@ -450,7 +451,7 @@ module cpu #(
                 $display("State - UPDATE_PCOUNTER_SUBROUTINE");
                 $display("TOS: %d", TOS);
                 next_state = LOAD_INST;
-                pcounter_next = TOS;
+                pcounter_next = TOS + 1;
             end               
         endcase
 
