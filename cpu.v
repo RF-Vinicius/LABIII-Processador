@@ -151,24 +151,8 @@ module cpu #(
 
     always @(posedge clk) begin
         if(reset) begin
-            state <= LOAD_INST;
-            pcounter <= 0;
-            pcounter_next <= 0;
-            Temp1 <= 0;
-            Temp2 <= 0;
-            TOS <= 0;
-            next_state <= 0;
-            stack_push_operations <= 0;
-            stack_pop_operations <= 0;
-            stack_data_in_operations <= 0;
-            stack_push_subroutines <= 0;
-            stack_pop_subroutines <= 0;
-            stack_data_in_subroutines <= 0;
-            operand_a <= 0;
-            operand_b <= 0;
-            //Todo: Verificar quais outras flags precisam zerar.
-        end
-        else begin
+            state <= RESET;
+        end else begin
             state <= next_state;
             pcounter <= pcounter_next;            
         end
@@ -178,17 +162,19 @@ module cpu #(
         case (state)
             RESET: begin
                 $display("State - RESET");
-                next_state = LOAD_INST;
+                state = LOAD_INST;
                 pcounter = 0;
                 pcounter_next = 0;
                 Temp1 = 0;
                 Temp2 = 0;
                 TOS = 0;
+                next_state = 0;
                 stack_push_operations = 0;
                 stack_pop_operations = 0;
-                write_data_enable = 0;
+                stack_data_in_operations = 0;
                 stack_push_subroutines = 0;
                 stack_pop_subroutines = 0;
+                stack_data_in_subroutines = 0;
                 operand_a = 0;
                 operand_b = 0;
                 op_ALU = 0;
