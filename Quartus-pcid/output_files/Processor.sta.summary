@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.563
+TNS   : -1045.801
+
+Type  : Slow 1200mV 85C Model Setup 'instruction[11]'
+Slack : -4.133
+TNS   : -90.789
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.000000'
+Slack : -3.072
+TNS   : -118.216
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.000000'
+Slack : -0.403
+TNS   : -0.403
+
+Type  : Slow 1200mV 85C Model Hold 'instruction[11]'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -364.085
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -82.573
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.101
+TNS   : -938.562
+
+Type  : Slow 1200mV 0C Model Setup 'instruction[11]'
+Slack : -3.924
+TNS   : -86.017
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -3.055
+TNS   : -113.428
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : -0.268
+TNS   : -0.268
+
+Type  : Slow 1200mV 0C Model Hold 'instruction[11]'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -364.085
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -67.891
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.243
+TNS   : -474.942
+
+Type  : Fast 1200mV 0C Model Setup 'instruction[11]'
+Slack : -2.006
+TNS   : -38.891
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -1.253
+TNS   : -45.666
+
+Type  : Fast 1200mV 0C Model Hold 'instruction[11]'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -304.443
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -36.578
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.208
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -10,14 +10,14 @@ module cpu #(
         // Instruction memory
         input wire [WIDTH_DATA-1:0] instruction,
         output reg [AWIDTH-1:0] address_memory_inst,
-        output reg read_inst_enable,
+        //output reg read_inst_enable,
 
         // Data memory
         output reg [WIDTH_DATA-1:0] memory_data_out,
         input wire [WIDTH_DATA-1:0] memory_data_in,
         output reg read_data_enable,
         output reg write_data_enable,
-        output reg [9:0] address_memory_data,
+        output reg [4:0] address_memory_data,
 
         // ALU
         input wire [WIDTH_DATA-1:0] result_alu,        
@@ -186,12 +186,12 @@ module cpu #(
                 $display("pcounter: %d", pcounter);
                 next_state = GET_INST;
                 address_memory_inst = pcounter;
-                read_inst_enable = 1;
+                //read_inst_enable = 1;
             end
             GET_INST : begin    //TODO : criar esse novo estado no miro
                 $display("State - GET_INST");
                 next_state = DECODE;
-                read_inst_enable = 0;
+                //read_inst_enable = 0;
                 // instruction is updated from the instruction memory
             end
             PCOUNTER_INC : begin 
@@ -211,7 +211,7 @@ module cpu #(
                         $display("OP - PUSH");
                         next_state = GET_DATA;
                         read_data_enable = 1;
-                        address_memory_data = operand;
+                        address_memory_data = operand[4:0];
                     end
                     PUSH_I: begin
                         $display("OP - PUSH_I");
