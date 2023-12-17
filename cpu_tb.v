@@ -33,17 +33,21 @@ module tb_cpu;
         #10
 
         // Tests
+        instruction = {5'd20, 11'd3};    // CALL 5
+        #50
+        $display("\n-------END CALL-------\n");
 
-        instruction = {5'd20, 11'd5};    // CALL
-        #40
+
+        instruction = {5'd20, 11'd5};    // CALL 5
+        #50
         $display("\n-------END CALL-------\n");
 
         instruction = {5'd20, 11'd4};    // CALL
-        #40
+        #50
         $display("\n-------END CALL-------\n");
 
         instruction = {5'd21, 11'd0};    // RET
-        #80
+        #50
         $display("\n-------END RET-------\n");
         
 
