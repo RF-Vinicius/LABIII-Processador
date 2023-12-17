@@ -164,7 +164,7 @@ module cpu #(
         case (state)
             RESET: begin
                 $display("State - RESET");
-                state = LOAD_INST;
+                next_state = LOAD_INST;
                 pcounter_next = 0;
                 Temp1 = 0;
                 Temp2 = 0;
