@@ -94,8 +94,8 @@ module cpu #(
     localparam UPDATE_PCOUNTER      = 26;
     localparam GET_TEMP1            = 27;
     localparam GET_TEMP2            = 28;
-    localparam RESET                = 28;
-    localparam UPDATE_SUBROUTINE    = 29;
+    localparam RESET                = 29;
+    localparam UPDATE_SUBROUTINE    = 30;
 
     // PCOUNTER
     reg [AWIDTH-1:0] pcounter = 0, pcounter_next;
