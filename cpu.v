@@ -94,9 +94,10 @@ module cpu #(
     localparam UPDATE_PCOUNTER      = 26;
     localparam GET_TEMP1            = 27;
     localparam GET_TEMP2            = 28;
+    localparam RESET                = 28;
 
     // PCOUNTER
-    reg [AWIDTH-1:0] pcounter = 0;
+    reg [AWIDTH-1:0] pcounter = 0, pcounter_next;
 
     // ALU
     alu  #(.WIDTH_DATA(WIDTH_DATA))alu_cpu (
@@ -141,22 +142,21 @@ module cpu #(
     // Attribute instruction to operation and operand
     always @(instruction) begin
         operation = instruction[WIDTH_DATA-1:WIDTH_DATA-5];
-        operand = instruction[WIDTH_DATA-5:0];
+        operand = instruction[WIDTH_DATA - 6 : 0];
 
         $display("instruction: %b", instruction);
         $display("operation: %b", operation);
         $display("operand: %b\n", operand);
-
-        operand = instruction[WIDTH_DATA - 6 : 0];
     end
 
     always @(posedge clk) begin
         if(reset) begin
             state <= LOAD_INST;
             pcounter <= 0;
-            Temp1 = 0;
-            Temp2 = 0;
-            TOS = 0;
+            pcounter_next <= 0;
+            Temp1 <= 0;
+            Temp2 <= 0;
+            TOS <= 0;
             next_state <= 0;
             stack_push_operations <= 0;
             stack_pop_operations <= 0;
@@ -170,19 +170,29 @@ module cpu #(
         end
         else begin
             state <= next_state;
-
-            case (next_state)  
-                PCOUNTER_INC:   pcounter <= pcounter + 1;
-
-                default:        pcounter <= pcounter;
-                
-            endcase
-            
+            pcounter <= pcounter_next;            
         end
     end
 
     always @(*) begin
         case (state)
+            RESET: begin
+                $display("State - RESET");
+                next_state = LOAD_INST;
+                pcounter = 0;
+                pcounter_next = 0;
+                Temp1 = 0;
+                Temp2 = 0;
+                TOS = 0;
+                stack_push_operations = 0;
+                stack_pop_operations = 0;
+                write_data_enable = 0;
+                stack_push_subroutines = 0;
+                stack_pop_subroutines = 0;
+                operand_a = 0;
+                operand_b = 0;
+                op_ALU = 0;
+            end
             LOAD_INST : begin
                 $display("State - LOAD_INST");
                 $display("pcounter: %d", pcounter);
@@ -199,6 +209,8 @@ module cpu #(
             PCOUNTER_INC : begin 
                 $display("State - PCOUNTER_INC");
                 next_state = LOAD_INST;
+                pcounter_next = pcounter + 1;
+
                 stack_push_operations = 0;
                 stack_pop_operations = 0;
                 write_data_enable = 0;                
@@ -237,7 +249,7 @@ module cpu #(
                     GOTO: begin
                         $display("OP - GOTO");
                         next_state = LOAD_INST;
-                        pcounter <= operand; // To do: Verificar depois se não conseguimos tirar o latch
+                        pcounter_next <= operand; // To do: Verificar depois se não conseguimos tirar o latch
                     end
                     IF_EQ: begin
                         $display("OP - IF_EQ");
@@ -356,7 +368,7 @@ module cpu #(
                 $display("State - CMP_IF_EQ");
                 if (Temp1 == 0) begin
                     next_state = LOAD_INST;
-                    pcounter = operand;
+                    pcounter_next = operand;
                 end
                 else begin
                     next_state = PCOUNTER_INC;
@@ -373,7 +385,7 @@ module cpu #(
                 $display("State - CMP_IF_GT");
                 if (Temp1 > 0) begin
                     next_state = LOAD_INST;
-                    pcounter = operand;
+                    pcounter_next = operand;
                 end
                 else begin
                     next_state = PCOUNTER_INC;
@@ -390,7 +402,7 @@ module cpu #(
                 $display("State - CMP_IF_LT");
                 if (Temp1 < 0) begin
                     next_state = LOAD_INST;
-                    pcounter = operand;
+                    pcounter_next = operand;
                 end
                 else begin
                     next_state = PCOUNTER_INC;
@@ -406,7 +418,7 @@ module cpu #(
                 $display("State - CMP_IF_GE");
                 if (Temp1 >= 0) begin
                     next_state = LOAD_INST;
-                    pcounter = operand;
+                    pcounter_next = operand;
                 end
                 else begin
                     next_state = PCOUNTER_INC;
@@ -422,7 +434,7 @@ module cpu #(
                 $display("State - CMP_IF_LE");
                 if (Temp1 <= 0) begin
                     next_state = LOAD_INST;
-                    pcounter = operand;
+                    pcounter_next = operand;
                 end
                 else begin
                     next_state = PCOUNTER_INC;
@@ -444,7 +456,7 @@ module cpu #(
                 $display("State - UPDATE_PCOUNTER");
                 $display("operand: %d", operand);
                 next_state = LOAD_INST;
-                pcounter = operand;
+                pcounter_next = operand;
             end            
         endcase
 
