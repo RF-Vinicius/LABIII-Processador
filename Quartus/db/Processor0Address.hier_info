@@ -1,7 +1,7 @@
 |Processor0Address
 clk => Processor:inst.clk
 clk => MemoryInstruction:inst6.clock
-clk => MemoryData:inst4.clock
+clk => MemoryData:inst1.clock
 reset => Processor:inst.reset
 
 
@@ -1227,7 +1227,7 @@ q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
 
 
-|Processor0Address|MemoryData:inst4
+|Processor0Address|MemoryData:inst1
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -1269,37 +1269,37 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|Processor0Address|MemoryData:inst4|altsyncram:altsyncram_component
-wren_a => altsyncram_kup3:auto_generated.wren_a
+|Processor0Address|MemoryData:inst1|altsyncram:altsyncram_component
+wren_a => altsyncram_f5t3:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
 rden_b => ~NO_FANOUT~
-data_a[0] => altsyncram_kup3:auto_generated.data_a[0]
-data_a[1] => altsyncram_kup3:auto_generated.data_a[1]
-data_a[2] => altsyncram_kup3:auto_generated.data_a[2]
-data_a[3] => altsyncram_kup3:auto_generated.data_a[3]
-data_a[4] => altsyncram_kup3:auto_generated.data_a[4]
-data_a[5] => altsyncram_kup3:auto_generated.data_a[5]
-data_a[6] => altsyncram_kup3:auto_generated.data_a[6]
-data_a[7] => altsyncram_kup3:auto_generated.data_a[7]
-data_a[8] => altsyncram_kup3:auto_generated.data_a[8]
-data_a[9] => altsyncram_kup3:auto_generated.data_a[9]
-data_a[10] => altsyncram_kup3:auto_generated.data_a[10]
-data_a[11] => altsyncram_kup3:auto_generated.data_a[11]
-data_a[12] => altsyncram_kup3:auto_generated.data_a[12]
-data_a[13] => altsyncram_kup3:auto_generated.data_a[13]
-data_a[14] => altsyncram_kup3:auto_generated.data_a[14]
-data_a[15] => altsyncram_kup3:auto_generated.data_a[15]
+data_a[0] => altsyncram_f5t3:auto_generated.data_a[0]
+data_a[1] => altsyncram_f5t3:auto_generated.data_a[1]
+data_a[2] => altsyncram_f5t3:auto_generated.data_a[2]
+data_a[3] => altsyncram_f5t3:auto_generated.data_a[3]
+data_a[4] => altsyncram_f5t3:auto_generated.data_a[4]
+data_a[5] => altsyncram_f5t3:auto_generated.data_a[5]
+data_a[6] => altsyncram_f5t3:auto_generated.data_a[6]
+data_a[7] => altsyncram_f5t3:auto_generated.data_a[7]
+data_a[8] => altsyncram_f5t3:auto_generated.data_a[8]
+data_a[9] => altsyncram_f5t3:auto_generated.data_a[9]
+data_a[10] => altsyncram_f5t3:auto_generated.data_a[10]
+data_a[11] => altsyncram_f5t3:auto_generated.data_a[11]
+data_a[12] => altsyncram_f5t3:auto_generated.data_a[12]
+data_a[13] => altsyncram_f5t3:auto_generated.data_a[13]
+data_a[14] => altsyncram_f5t3:auto_generated.data_a[14]
+data_a[15] => altsyncram_f5t3:auto_generated.data_a[15]
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_kup3:auto_generated.address_a[0]
-address_a[1] => altsyncram_kup3:auto_generated.address_a[1]
-address_a[2] => altsyncram_kup3:auto_generated.address_a[2]
-address_a[3] => altsyncram_kup3:auto_generated.address_a[3]
-address_a[4] => altsyncram_kup3:auto_generated.address_a[4]
+address_a[0] => altsyncram_f5t3:auto_generated.address_a[0]
+address_a[1] => altsyncram_f5t3:auto_generated.address_a[1]
+address_a[2] => altsyncram_f5t3:auto_generated.address_a[2]
+address_a[3] => altsyncram_f5t3:auto_generated.address_a[3]
+address_a[4] => altsyncram_f5t3:auto_generated.address_a[4]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_kup3:auto_generated.clock0
+clock0 => altsyncram_f5t3:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -1309,29 +1309,29 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_kup3:auto_generated.q_a[0]
-q_a[1] <= altsyncram_kup3:auto_generated.q_a[1]
-q_a[2] <= altsyncram_kup3:auto_generated.q_a[2]
-q_a[3] <= altsyncram_kup3:auto_generated.q_a[3]
-q_a[4] <= altsyncram_kup3:auto_generated.q_a[4]
-q_a[5] <= altsyncram_kup3:auto_generated.q_a[5]
-q_a[6] <= altsyncram_kup3:auto_generated.q_a[6]
-q_a[7] <= altsyncram_kup3:auto_generated.q_a[7]
-q_a[8] <= altsyncram_kup3:auto_generated.q_a[8]
-q_a[9] <= altsyncram_kup3:auto_generated.q_a[9]
-q_a[10] <= altsyncram_kup3:auto_generated.q_a[10]
-q_a[11] <= altsyncram_kup3:auto_generated.q_a[11]
-q_a[12] <= altsyncram_kup3:auto_generated.q_a[12]
-q_a[13] <= altsyncram_kup3:auto_generated.q_a[13]
-q_a[14] <= altsyncram_kup3:auto_generated.q_a[14]
-q_a[15] <= altsyncram_kup3:auto_generated.q_a[15]
+q_a[0] <= altsyncram_f5t3:auto_generated.q_a[0]
+q_a[1] <= altsyncram_f5t3:auto_generated.q_a[1]
+q_a[2] <= altsyncram_f5t3:auto_generated.q_a[2]
+q_a[3] <= altsyncram_f5t3:auto_generated.q_a[3]
+q_a[4] <= altsyncram_f5t3:auto_generated.q_a[4]
+q_a[5] <= altsyncram_f5t3:auto_generated.q_a[5]
+q_a[6] <= altsyncram_f5t3:auto_generated.q_a[6]
+q_a[7] <= altsyncram_f5t3:auto_generated.q_a[7]
+q_a[8] <= altsyncram_f5t3:auto_generated.q_a[8]
+q_a[9] <= altsyncram_f5t3:auto_generated.q_a[9]
+q_a[10] <= altsyncram_f5t3:auto_generated.q_a[10]
+q_a[11] <= altsyncram_f5t3:auto_generated.q_a[11]
+q_a[12] <= altsyncram_f5t3:auto_generated.q_a[12]
+q_a[13] <= altsyncram_f5t3:auto_generated.q_a[13]
+q_a[14] <= altsyncram_f5t3:auto_generated.q_a[14]
+q_a[15] <= altsyncram_f5t3:auto_generated.q_a[15]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Processor0Address|MemoryData:inst4|altsyncram:altsyncram_component|altsyncram_kup3:auto_generated
+|Processor0Address|MemoryData:inst1|altsyncram:altsyncram_component|altsyncram_f5t3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
