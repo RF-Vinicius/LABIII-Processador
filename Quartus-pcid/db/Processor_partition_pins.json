@@ -116,15 +116,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[5]",
-					"strict" : false
-				},
-				{
 					"name" : "instruction[5]",
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[6]",
+					"name" : "memory_data_in[5]",
 					"strict" : false
 				},
 				{
@@ -132,7 +128,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[7]",
+					"name" : "memory_data_in[6]",
 					"strict" : false
 				},
 				{
@@ -140,7 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[8]",
+					"name" : "memory_data_in[7]",
 					"strict" : false
 				},
 				{
@@ -148,7 +144,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[9]",
+					"name" : "memory_data_in[8]",
 					"strict" : false
 				},
 				{
@@ -156,11 +152,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "memory_data_in[10]",
+					"name" : "memory_data_in[9]",
 					"strict" : false
 				},
 				{
 					"name" : "instruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_data_in[10]",
 					"strict" : false
 				},
 				{

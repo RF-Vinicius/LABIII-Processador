@@ -33,6 +33,7 @@ module tb_cpu;
         #10
 
         // Tests
+        
         instruction = {5'd20, 11'd3};    // CALL 5
         #50
         $display("\n-------END CALL-------\n");
@@ -62,7 +63,7 @@ module tb_cpu;
         $display("\n-------END PUSH_I-------\n");
 
         instruction = {5'd4, 11'd0};    // ADD
-        #80
+        #90
         $display("\n-------END ADD-------\n");
         */
         

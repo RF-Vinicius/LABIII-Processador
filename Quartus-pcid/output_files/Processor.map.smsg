@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at cpu.v(164): always construct contains both blocking and non-blocking assignments File: C:/Users/vini9/Processador-PCID/cpu.v Line: 164
-Info (10281): Verilog HDL Declaration information at cpu.v(26): object "op_ALU" differs only in case from object "OP_ALU" in the same scope File: C:/Users/vini9/Processador-PCID/cpu.v Line: 26
-Info (10281): Verilog HDL Declaration information at cpu.v(8): object "reset" differs only in case from object "RESET" in the same scope File: C:/Users/vini9/Processador-PCID/cpu.v Line: 8
+Warning (10268): Verilog HDL information at cpu.v(165): always construct contains both blocking and non-blocking assignments File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 165
+Info (10281): Verilog HDL Declaration information at cpu.v(26): object "op_ALU" differs only in case from object "OP_ALU" in the same scope File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 26
+Info (10281): Verilog HDL Declaration information at cpu.v(8): object "reset" differs only in case from object "RESET" in the same scope File: C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/cpu.v Line: 8
