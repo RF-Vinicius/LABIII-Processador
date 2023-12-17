@@ -1,5 +1,4 @@
 
-
 module cpu #(
     parameter integer WIDTH_DATA = 16, parameter integer AWIDTH = 5
     )(
@@ -98,6 +97,7 @@ module cpu #(
     reg [AWIDTH-1:0] pcounter = 0;
 
 
+
     // Registers
     reg [WIDTH_DATA-1:0] Temp1 = 0, Temp2 = 0, TOS = 0;
 
@@ -106,22 +106,11 @@ module cpu #(
     reg [WIDTH_DATA -6 :0] operand = 0;
     reg [5:0] state = 0, next_state = 0;
 
-    // Attribute instruction to operation and operand
-    always @(instruction) begin
-        operation = instruction[WIDTH_DATA-1:WIDTH_DATA-5];
-        operand = instruction[WIDTH_DATA-5:0];
-
-        $display("instruction: %b", instruction);
-        $display("operation: %b", operation);
-        $display("operand: %b\n", operand);
-
-        operand = instruction[WIDTH_DATA - 6 : 0];
-    end
 
     always @(posedge clk) begin
         if(reset) begin
-            state <= LOAD_INST;
-            /*pcounter <= 0;
+            /*state <= LOAD_INST;
+            pcounter <= 0;
             Temp1 = 0;
             Temp2 = 0;
             TOS = 0;
@@ -132,15 +121,17 @@ module cpu #(
             stack_push_subroutines <= 0;
             stack_pop_subroutines <= 0;
             stack_data_in_subroutines <= 0;
+            operand_a <= 0;
+            operand_b <= 0;
             //Todo: Verificar quais outras flags precisam zerar.*/
         end
         else begin
             state <= next_state;
+            operation <= instruction[WIDTH_DATA-1:WIDTH_DATA-5];
+            operand <= instruction[WIDTH_DATA-5:0];
 
             case (next_state)  
                 PCOUNTER_INC:   pcounter <= pcounter + 1;
-					 
-					 GOTO, CMP_IF_EQ, CMP_IF_GT,CMP_IF_LT,CMP_IF_GE, CMP_IF_LE, UPDATE_PCOUNTER: pcounter <= operand;
 
                 default:        pcounter <= pcounter;
                 
