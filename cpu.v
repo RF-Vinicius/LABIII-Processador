@@ -23,7 +23,7 @@ module cpu #(
         input wire [WIDTH_DATA-1:0] result_alu,        
         output reg  [WIDTH_DATA-1:0] operand_a,
         output reg  [WIDTH_DATA-1:0] operand_b,
-        output reg  [3:0] op_ALU,
+        output reg  [4:0] op_ALU,
 
         // Stack operations
         input wire stack_full_operations,
@@ -95,6 +95,7 @@ module cpu #(
     localparam GET_TEMP1            = 27;
     localparam GET_TEMP2            = 28;
     localparam RESET                = 28;
+    localparam UPDATE_SUBROUTINE    = 29;
 
     // PCOUNTER
     reg [AWIDTH-1:0] pcounter = 0, pcounter_next;
@@ -431,19 +432,25 @@ module cpu #(
                 next_state = UPDATE_PCOUNTER;
                 stack_push_subroutines = 0;
             end                    
-            POP_SUBROUTINE : begin
-                $display("State - POP_SUBROUTINE");
-                next_state = UPDATE_PCOUNTER;
-                operand = stack_data_out_subroutines;
-                $display("stack_full_subroutines: %d", stack_full_subroutines);
-                stack_pop_subroutines = 0;
-            end
             UPDATE_PCOUNTER : begin
                 $display("State - UPDATE_PCOUNTER");
                 $display("operand: %d", operand);
                 next_state = LOAD_INST;
                 pcounter_next = operand;
-            end            
+            end
+            POP_SUBROUTINE : begin
+                $display("State - POP_SUBROUTINE");
+                next_state = UPDATE_SUBROUTINE;
+                TOS = stack_data_out_subroutines;
+                $display("stack_full_subroutines: %d", stack_full_subroutines);
+                stack_pop_subroutines = 0;
+            end
+            UPDATE_SUBROUTINE : begin
+                $display("State - UPDATE_PCOUNTER_SUBROUTINE");
+                $display("TOS: %d", TOS);
+                next_state = LOAD_INST;
+                pcounter_next = TOS;
+            end               
         endcase
 
     end
