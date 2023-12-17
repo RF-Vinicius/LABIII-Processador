@@ -1,0 +1,257 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'instruction[11]'
+Slack : -42.881
+TNS   : -428.733
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.GET_TEMP2'
+Slack : -7.410
+TNS   : -45.914
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.GET_TEMP1'
+Slack : -7.078
+TNS   : -93.994
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -5.754
+TNS   : -1252.084
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.OP_ALU'
+Slack : -3.832
+TNS   : -95.499
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : -2.308
+TNS   : -11.714
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:inst|state.000000'
+Slack : -1.486
+TNS   : -4.236
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.000000'
+Slack : -1.230
+TNS   : -2.460
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'instruction[11]'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.GET_TEMP1'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.OP_ALU'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:inst|state.GET_TEMP2'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -367.940
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -49.588
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP2'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP1'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:inst|state.OP_ALU'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'instruction[11]'
+Slack : -38.554
+TNS   : -388.461
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.GET_TEMP2'
+Slack : -6.687
+TNS   : -43.669
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.GET_TEMP1'
+Slack : -6.393
+TNS   : -85.835
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.164
+TNS   : -1124.065
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.OP_ALU'
+Slack : -3.462
+TNS   : -88.306
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : -2.196
+TNS   : -11.084
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -1.315
+TNS   : -3.762
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : -1.148
+TNS   : -2.296
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'instruction[11]'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.GET_TEMP1'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.OP_ALU'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:inst|state.GET_TEMP2'
+Slack : 0.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -367.940
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -40.477
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP1'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP2'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.OP_ALU'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'instruction[11]'
+Slack : -20.569
+TNS   : -199.647
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.GET_TEMP2'
+Slack : -3.709
+TNS   : -18.654
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.GET_TEMP1'
+Slack : -3.533
+TNS   : -43.970
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -3.070
+TNS   : -616.344
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.OP_ALU'
+Slack : -1.579
+TNS   : -31.541
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : -0.875
+TNS   : -4.182
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:inst|state.000000'
+Slack : -0.353
+TNS   : -0.961
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.000000'
+Slack : -0.639
+TNS   : -1.278
+
+Type  : Fast 1200mV 0C Model Hold 'instruction[11]'
+Slack : -0.112
+TNS   : -0.112
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.042
+TNS   : -0.042
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.GET_TEMP1'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.OP_ALU'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:inst|state.GET_TEMP2'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -307.541
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'instruction[11]'
+Slack : -3.000
+TNS   : -36.941
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP2'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.000000'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.OP_ALU'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.ENABLE_WRITE_DATA'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:inst|state.GET_TEMP1'
+Slack : 0.402
+TNS   : 0.000
+
+------------------------------------------------------------
