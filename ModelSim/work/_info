@@ -7,149 +7,149 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/leand/UFBA
+dC:/intelFPGA/18.1
 valu
-Z0 !s110 1702817467
+Z0 !s110 1702837042
 !i10b 1
 !s100 aIn7?LemEQ94b;GogNEAl3
-I`9]nzH?nCb0<bz>WgmV=_3
+IDDWPQ?GRO1OFHWn^URZ0i2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta
+Z2 dC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim
 w1702727938
-8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/alu.v
-FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/alu.v
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/alu.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/alu.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1702817467.000000
-!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/alu.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/alu.v|
+Z4 !s108 1702837042.000000
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/alu.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vcpu
 R0
 !i10b 1
-!s100 UeTO37Hck;W1C[21lSHc[3
-IT?ZHk3@K``oS<F_AfF_IS0
+!s100 EUK=PTn=PS<lMRHYClZlO1
+IL4IC2886<JVQ^Ek50AA1C2
 R1
 R2
-Z7 w1702784423
-8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/cpu.v
-FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/cpu.v
+Z7 w1702836489
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/cpu.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/cpu.v
 L0 4
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/cpu.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/cpu.v|
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/cpu.v|
 !i113 1
 R5
 R6
 Ememorydata
-Z8 w1702784422
-Z9 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
-Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R7
+Z8 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R2
-Z12 8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryData.vhd
-Z13 FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryData.vhd
+Z11 8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryData.vhd
+Z12 FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryData.vhd
 l0
 L42
 V9zgKig:5T^9`ogng>GLOB3
 !s100 jL6bL9BhfC7h3Z[ge2N=b3
-Z14 OV;C;10.5b;63
+Z13 OV;C;10.5b;63
 32
 R0
 !i10b 1
 R4
-Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryData.vhd|
-Z16 !s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryData.vhd|
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryData.vhd|
+Z15 !s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryData.vhd|
 !i113 1
-Z17 o-work work -2002 -explicit
-Z18 tExplicit 1 CvgOpt 0
+Z16 o-work work -2002 -explicit
+Z17 tExplicit 1 CvgOpt 0
 Asyn
+R8
 R9
 R10
-R11
 DEx4 work 10 memorydata 0 22 9zgKig:5T^9`ogng>GLOB3
 l58
 L54
 VU>;@97g>L4XdKGPI5CJlo0
 !s100 <[YZ@AHZ];nl;n83Y7Pzi0
-R14
+R13
 32
 R0
 !i10b 1
 R4
+R14
 R15
-R16
 !i113 1
+R16
 R17
-R18
 Ememoryinstruction
+R7
 R8
 R9
 R10
-R11
 R2
-Z19 8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryInstruction.vhd
-Z20 FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryInstruction.vhd
+Z18 8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryInstruction.vhd
+Z19 FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryInstruction.vhd
 l0
 L42
 V]TV4LIo]48kecXWORl3_62
 !s100 <UX7z`e_e3Q_9XOi6o1Pz2
-R14
+R13
 32
 R0
 !i10b 1
 R4
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryInstruction.vhd|
-Z22 !s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/MemoryInstruction.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryInstruction.vhd|
+Z21 !s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/MemoryInstruction.vhd|
 !i113 1
+R16
 R17
-R18
 Asyn
+R8
 R9
 R10
-R11
 DEx4 work 17 memoryinstruction 0 22 ]TV4LIo]48kecXWORl3_62
 l56
 L52
 V5Ch@K86b_S]IN__aMaG1D2
 !s100 `QH@R@TR9^iYASRAc_S193
-R14
+R13
 32
 R0
 !i10b 1
 R4
+R20
 R21
-R22
 !i113 1
+R16
 R17
-R18
 vProcessor
 R0
 !i10b 1
 !s100 B4_@<2VOIfTiZ[?N4fEd51
-IY1N0OHMAGBbfENJI2V0NE1
+IB?o09XnU46za?94DPYz2<2
 R1
 R2
-R8
-8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/Processor.v
-FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/Processor.v
-Z23 L0 19
+R7
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor.v
+Z22 L0 19
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/Processor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/Processor.v|
+!s108 1702837041.000000
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor.v|
 !i113 1
 R5
 R6
@@ -158,20 +158,20 @@ vProcessor0Address
 R0
 !i10b 1
 !s100 nU4LN5OTficNGjZfOP<cl1
-IWC@?MAnfYMLnQ_6;<n;[M2
+I@Rg2Z`J?@Lh??hF_aV?^?1
 R1
 R2
-w1702816763
-8C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\Processor0Address.v
-FC:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\Processor0Address.v
-R23
+R7
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor0Address.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor0Address.v
+R22
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\Processor0Address.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\Processor0Address.v|
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor0Address.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Processor0Address.v|
 !i113 1
 R5
 R6
@@ -180,41 +180,41 @@ vstack
 R0
 !i10b 1
 !s100 lUDnX:4Q9YCo7PKARnD=_0
-I7[I_<O407QlI[FOJYkEol2
+I?2Bn[5OemD?BiZdCeZ]?W0
 R1
 R2
-R7
-8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/stack.v
-FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/stack.v
+w1702784423
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/stack.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/stack.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/stack.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/Nova pasta/stack.v|
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/stack.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/stack.v|
 !i113 1
 R5
 R6
 vtestbench
-!s110 1702818568
+R0
 !i10b 1
 !s100 `6iKdW=RoDdX4]RLbec1k2
-Ik@<7Q4Kjn<H_i0]FWAhn@2
+ICZ;`DECezzBelo>;SD^Kn3
 R1
 R2
-w1702818544
-8C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\testbench.v
-FC:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\testbench.v
+w1702837000
+8C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Testbench.v
+FC:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Testbench.v
 L0 3
 R3
 r1
 !s85 0
 31
-!s108 1702818568.000000
-!s107 C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\testbench.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\leand\UFBA\TRAB_PCID\Processador-PCID\Nova pasta\testbench.v|
+R4
+!s107 C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/leand/UFBA/TRAB_PCID/Processador-PCID/ModelSim/Testbench.v|
 !i113 1
 R5
 R6
